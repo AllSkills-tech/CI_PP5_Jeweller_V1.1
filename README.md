@@ -1,5 +1,5 @@
 # Jeweller Version1.1 BugFix
-Developer:  **Deirdre McCarthy**, Feb 2024
+Developer:  **Deirdre McCarthy**, March 2024
 
 ### Live webpage link
 
@@ -8,35 +8,37 @@ Developer:  **Deirdre McCarthy**, Feb 2024
 Jeweller site:  Use Ctrl + click to open in new tab: https://jeweller-bd1caeb15bbd.herokuapp.com/
 
 # Table of Contents:
-1. [About](#about)
-    1. [Responsiveness](#responsiveness)
-2. [Project Goals: ](#project-goals)
+1. [Fixes and Enhancements in Version 1.1](#rel-1.1)
+    1. [Bug Fixes](#bug-fixes)
+    2. [Enhancements](#enhancements)
+2. [About](#about)
+3. [Project Goals: ](#project-goals)
     1. [UX Design - Strategy ](#ux-design-strategy) 
     2. [UX Design - Strategy - Competitor Portals](#ux-design-strategy-analysis-of-competitors)
     3. [UX Design - Strategy - Target Audience](#ux-design-strategy-target-audience)
-3. [Ecommerce and Marketing Stagtegy](#ecommerce-strategy)
+4. [Ecommerce and Marketing Stagtegy](#ecommerce-strategy)
     1. [Ecommerce Business Model](#e-commerce-business-model)
     2. [Business impacts of adopting an ecommerce strategy](#business-impacts)
     3. [Customer Profiles](#customer-profiles)
     4. [Marketing Strategy](#marketing-strategy)
-3. [UX Design - Scope](#ux-design-scope)
+5. [UX Design - Scope](#ux-design-scope)
     1. [UX Design - Scope - User Requirements and Expectations](#user-requirements-scope)
     2. [UX Design - Scope - Geographical](#shipping-constraints)    
     3. [UX Design - Scope - Data](#data-scope)
-4. [User goals/ user stories: ](#user-goals-user-stories)
+6. [User goals/ user stories: ](#user-goals-user-stories)
     1. [Site Owner Goals](#site-owner-goals)
     2. [First-time User Goals](#first-time-user-goals)
     3. [Returning User Goals](#returning-user-goals)
-5. [Further UX Design: ](#ux-design-decisions)
+7. [Further UX Design: ](#ux-design-decisions)
     1. [Skeleton - Wireframes; ](#wireframes)
     2. [Surface - Fonts; ](#fonts-chosen)
     3. [Surface - Colours](#colour-scheme)
     4. [Surface - Imagery](#design-images)
-6. [Database](#database)
+8. [Database](#database)
     1. [Conceptual database design](#database-design)
     2. [Database schemas](#database-schema)
     3. [Techncial implementation](#database-technical)
-7. [Agile Methology: ](#agile)
+9. [Agile Methology: ](#agile)
     1. [Project setup](#project)
     2. [Designing an Issue Template](#issue-template)
     3. [Creating project issues](#project-issues)
@@ -49,35 +51,52 @@ Jeweller site:  Use Ctrl + click to open in new tab: https://jeweller-bd1caeb15b
     10. [Project tabular view](#tabular-projects-view)
     11. [Kanban board](#kanban-board)
     12. [Observations and learnings](#agile-observations-and-learnings)    
-8. [Features](#features)
+10. [Features](#features)
     1. [Included](#features-in-scope)
     2. [Mapped to user stories](#)
     3. [Future Development](#features-left-to-implement)
-9. [Technology](#technologies)
+11. [Technology](#technologies)
     1. [Languages](#langugages)
     2. [Frameworks and Tools](#frameworks--tools)
-9. [Validation](#validation)
-    1. [HTML Validation](#html-validation)
-    2. [CSS Validation](#css-validation)
-    3. [Javascript Validation](#javascript-validation)
-    4. [Accessibility](#accessibility)
-    5. [Performance](#performance)
-    6. [Multi-device Testing](#multi-device-testing)
-    7. [Multi-browser Testing](#multi-browser-testing)
-    8. [Testing user stories](#testing-user-stories)
-    9. [Unfixed Bugs](#unfixed-bugs)
-10. [Accessibility](#accessibility)
-11. [Performance](#performance)
-12. [Deployment](#deployment)
-13. [Credits](#credits)
+12. [Validation](#validation)
+    1. [Responsiveness](#responsiveness)
+    2. [HTML Validation](#html-validation)
+    3. [CSS Validation](#css-validation)
+    4. [Javascript Validation](#javascript-validation)
+    5. [Accessibility](#accessibility)
+    6. [Performance](#performance)
+    7. [Multi-device Testing](#multi-device-testing)
+    8. [Multi-browser Testing](#multi-browser-testing)
+    9. [Testing user stories](#testing-user-stories)
+    10. [Unfixed Bugs](#unfixed-bugs)
+13. [Accessibility](#accessibility)
+14. [Performance](#performance)
+15. [Deployment](#deployment)
+16. [Credits](#credits)
     1. [Content](#content)
     2. [Media](#media)
     3. [Code](#code)
     4. [References](#references)
     5. [Acknowledgements](#acknowledgements)
 
+## Rel 1.1
+---------
+
+### Bug Fixes
+| Issuenum | Description | Cause | Resolution|
+|--|--|--|--|
+| N/A | General tidyup of section numbering | N/A | Renumbered |
+| 56 | FEEDBACK FORM - not activating | Missing code section to initiate EmailJS | Inserted JS code section to initiate EmailJS |
+
+
+
+### Enhancements
+| Issuenum | Description | Cause | Resolution |
+|--|--|--|--|
+
 ## About
 ---------
+
 Jeweller is a system which is designed for a real-life retail Jewellery business.  This business built a first website 4 years ago, but it was not integrated with the retail business or everyday processes, and was never successfully implemented.  
 The existing website remains in use as a 'shop window' for off-the-shelf items, but is not actively maintained, with many products showing as 'out of stock', and online orders discouraged.  The business owners are, however, quite active on social media (facebook and Instagram) for (free) advertising and organic marketing - marketing to existing customers and friends of the business.  
 

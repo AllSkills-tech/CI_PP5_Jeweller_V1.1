@@ -31,7 +31,7 @@
 
 <div class="container-fluid" id="Enquiry">
     <div class="container mt-5">
-        <h1>Share Your Feedback</h1>
+        <h3>Contact Us</h3>
         <form id="contact-form">
           <div class="row">
               <div class="col-lg-6 col-md-6">
@@ -46,6 +46,11 @@
           </div>
           <div class="row">
               <div class="col-lg-6 col-md-6">
+                  <label for="from_phone">Phone:</label>
+                  <input type="text" name="from_phone" id="from_phone" class="form-control" required />
+              </div>
+              
+              <div class="col-lg-6 col-md-6">
                   <label for="from_email">Email:</label>
                   <input type="email" name="from_email" id="from_email" class="form-control" required />
               </div>
@@ -58,12 +63,12 @@
               </div>
           </div>
           <br>
-          <label for="message">Message:</label>
+          <label for="message">Message / Enquiry:</label>
           <textarea rows="5" name="message" id="message" class="form-control" required></textarea>
           <br>
           <div class="form-row text-center">
               <div class="col">
-                  <input type="submit" class="submit-button" id="button">
+                  <input type="submit" class="submit-button" id="contact-button">
               </div>
           </div>
       </form>
@@ -80,29 +85,32 @@
 
 {% block postloadjs %}
     {{ block.super }}
-
+  <script type="text/javascript">
+    emailjs.init('nJIzMgsyYaZu0gOHX');
+  </script>
+    
   <script type="text/javascript">
     // CONTACT FORM - content below from emailjs:
-    const btn = document.getElementById('button');
+    window.onload = function() {
+      const btn = document.getElementById('contact-button');
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
 
-    document.getElementById('form')
-    .addEventListener('submit', function(event) {
-    event.preventDefault();
+      btn.innerHTML = 'Sending...';
 
-    btn.value = 'Sending...';
+      const serviceID = 'default_service';
+      const templateID = 'template_lqq1mif';
 
-    const serviceID = 'default_service';
-    const templateID = 'template_lqq1mif';
-
-    emailjs.sendForm(serviceID, templateID, this)
-      .then(() => {
-        btn.value = 'Send Email';
-        alert('Sent!');
-      }, (err) => {
-        btn.value = 'Send Email';
-        alert(JSON.stringify(err));
+      emailjs.sendForm('service_13pogah', 'template_lqq1mif', this)
+        .then(() => {
+          btn.innerHTML = 'Email Sent';
+          alert('Thank you for your enquiry to Goldmark, you should receive an acknowledgement email in the next few minutes...');
+        }, (err) => {
+          btn.innerHTML = 'Send Email';
+          alert(' There was an error sending the message.  The error code is ' + JSON.stringify(err));
+        });
       });
-    });
+    }
   </script>
 
     <!-- JS to permit page upscroll to top of page -->
