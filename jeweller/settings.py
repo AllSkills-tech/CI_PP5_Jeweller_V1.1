@@ -72,24 +72,20 @@ LOGIN_REDIRECT_URL = '/'
 # Set to None to ask the user (“Remember me?”),
 # False to not remember, and True to always remember.
 ACCOUNT_SESSION_REMEMBER = None
-
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 
-ALLOWED_HOSTS = ['8000-deemccart-cipp5jeweller-10k3i9z0k0t.ws-eu107.gitpod.io',
-                 ('https://8000-deemccart-cipp5jeweller-10k3i9z0k0t.'
-                  + 'ws-eu107.gitpod.io/'),
-                 '8000-deemccart-cipp5jeweller-10k3i9z0k0t.ws-eu108.gitpod.io',
+ALLOWED_HOSTS = ['https//8000-allskillste-cipp5jewell-pcsrc5tddes.ws-eu108.gitpod.io/',
+                 '8000-allskillste-cipp5jewell-pcsrc5tddes.ws-eu108.gitpod.io',
                  '.jeweller-bd1caeb15bbd.herokuapp.com',
                  'https://jeweller-bd1caeb15bbd.herokuapp.com/',
                  ]
 
 CSRF_TRUSTED_ORIGINS = [
-                       ('https://8000-deemccart-cipp5jeweller-10k3i9z0k0t.'
-                        + 'ws-eu107.gitpod.io'),
-                       ('https://8000-deemccart-cipp5jeweller-10k3i9z0k0t.'
-                        + 'ws-eu108.gitpod.io'),
-                       'https://jeweller-bd1caeb15bbd.herokuapp.com/'
+                       'https://8000-allskillste-cipp5jewell-pcsrc5tddes.ws-eu108.gitpod.io',
+                       ('https://8000-allskillste-cipp5jewell-pcsrc5tddes.ws-eu108.'
+                        + 'gitpod.io/'),
+                       'https://jeweller-bd1caeb15bbd.herokuapp.com/',
                        ]
 
 # Application definition
